@@ -1,1 +1,6 @@
-video/*
+text/
+image/
+audio/
+video/
+application/
+node_modules/

@@ -1,7 +1,7 @@
 # xMemory 家用云服务器
 
 
-## 项目缘起
+## 【项目缘起】
 
 中国大陆 80后开始的年轻人过年回家三大技术工作 —— 修电脑、存照片、下电影……
 
@@ -17,6 +17,14 @@
 所以，作为一个准全栈工程师，带着十多年的技术思考，我在 2017年正月的家中写下了本项目的第一份代码 —— 让老妈躺在沙发上抱着平板电脑开心地看了一部电影~
 
 
-## 技术栈
+## 【技术栈】
 
-HTML 5、CSS 3、JavaScript(ES 5+)、PHP 5.3+
+HTML 5、CSS 3、JavaScript(ES 5+)
+
+
+## 【安装方法】
+
+ 1. 下载 [Node.JS 最新 LTS 版](https://nodejs.org/zh-cn/)，并安装
+ 2. 下载 [xMemory 最新公测版](https://github.com/TechQuery/xMemory/archive/master.zip)，并解压到一个新文件夹
+ 3. 在上述文件夹中执行 `npm install  &&  npm start` 命令
+ 4. 服务器启动后，即可在网页浏览器中用 `//localhost:8081/` 访问
