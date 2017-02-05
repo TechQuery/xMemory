@@ -1,0 +1,35 @@
+<style>
+    form[target] {
+        display:    none;
+    }
+    ul {
+        margin:     0;
+        padding:    0;
+    }
+    ul > li.Background-Image {
+        min-width:     5em;
+        min-height:    5em;
+    }
+    ul > li:first-child {
+        text-align:     center;
+        line-height:    5em;
+        border:         1px  dashed  gray;
+    }
+    ul > li:first-child > .Add {
+        font-size:    2em;
+    }
+    ul > li:first-child > .Add:hover {
+        background:    transparent;
+    }
+</style>
+<script>
+    require(['camera']);
+</script>
+<form target="_blank" method="post" enctype="multipart/form-data" action="/file">
+    <input type="file" name="data" required multiple>
+</form>
+<ul>
+    <li class="Item-Box Background-Image"><!--
+     --><i class="Icon Add"></i>
+    </li>
+</ul>

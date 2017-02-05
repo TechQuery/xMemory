@@ -1,6 +1,7 @@
-text/
-image/
-audio/
-video/
-application/
 node_modules/
+.temp/
+public/text/
+public/image/
+public/audio/
+public/video/
+public/application/

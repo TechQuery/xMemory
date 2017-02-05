@@ -15,8 +15,6 @@ module.exports = function (url, request, response) {
 
             if ( error )  return  reject( error );
 
-            response.writeHead(200,  {'Content-Type': 'text/plain'});
-
             var file = files.data;
 
             var path = 'public/' + file.type.split('/')[0];

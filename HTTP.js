@@ -18,13 +18,17 @@ require('http').createServer(function (request, response) {
             Promise.reject()
     ).then(function () {
 
+        response.writeHeader(200, {
+            'Content-Type':    request.headers.accept.split(',')[0]
+        });
+
         response.end( arguments[0] );
 
     },  function () {
 
         response.statusCode = 404;
 
-        response.end();
+        response.end( arguments[0].message );
     });
 
 }).listen(8081);

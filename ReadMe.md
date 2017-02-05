@@ -19,7 +19,11 @@
 
 ## 【技术栈】
 
-HTML 5、CSS 3、JavaScript(ES 5+)
+ - 编程语言：HTML 5、CSS 3、JavaScript(ES 5+)
+ - UI 框架：EasyWebUI
+ - 前端基础库：Require.js、jQuery
+ - SPA 引擎：EasyWebApp
+ - 后端引擎：Node.JS
 
 
 ## 【安装方法】

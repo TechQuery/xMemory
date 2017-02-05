@@ -1,0 +1,50 @@
+<!DocType HTML>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no">
+
+	<meta name="author" content="https://github.com/TechQuery">
+
+    <title>xMemory 家用云服务</title>
+
+    <link rel="stylesheet" href="//tech_query.oschina.io/css/EasyWebUI.css" />
+    <style>
+        body > h1 {
+            margin:     0;
+            padding:    0.5em;
+            font:       inherit;
+            height:     7%;
+        }
+        body > div {
+            height:      93%;
+            overflow:    auto;
+        }
+    </style>
+    <script src="//cdn.bootcss.com/require.js/2.3.0/require.min.js"></script>
+    <script>
+        require.config({
+            baseUrl:    'html/',
+            paths:      {
+                jquery:        '//cdn.bootcss.com/jquery/1.12.4/jquery.min',
+                'jQuery+':     '//tech_query.oschina.io/iquery/jQuery+',
+                'iQuery+':     '//tech_query.oschina.io/iquery/iQuery+',
+                EasyWebUI:     '//tech_query.oschina.io/css/EasyWebUI',
+                EasyWebApp:    '../EasyWebApp',
+                marked:        '//cdn.bootcss.com/marked/0.3.6/marked.min',
+                QRcode:
+                    '//cdn.bootcss.com/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.min'
+            },
+            shim:       {QRcode:  ['jquery']}
+        });
+
+        require(['jquery', 'EasyWebApp'],  function ($) {
+
+            $('body > div').iWebApp();
+        });
+    </script>
+</head><body>
+    <h1 class="Blue_O" target="_self" href="html/menu.html" autofocus>
+        xMemory 家用云服务
+    </h1>
+    <div></div>
+</body></html>
