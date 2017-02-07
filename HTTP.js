@@ -7,20 +7,17 @@ require('http').createServer(function (request, response) {
 
     if (url.pathname == '/')  url.pathname += 'index.html';
 
-    var path = url.pathname.split('/');
-
-    var model = './HTTP/' + (
-            (path[path.length - 1].indexOf('.')  >  -1)  ?  'static'  :  path[1]
+    var _module_ = './HTTP/' + (
+            FS.existsSync('public/' + url.pathname)  ?
+                'static'  :  url.pathname.split('/')[1]
         );
     (
-        FS.existsSync(model + '.js')  ?
-            require( model )(url, request, response)  :
-            Promise.reject()
+        FS.existsSync(_module_ + '.js')  ?
+            require(_module_)(url, request, response)  :
+            Promise.reject(new Error('Resource not found'))
     ).then(function () {
 
-        response.writeHeader(200, {
-            'Content-Type':    request.headers.accept.split(',')[0]
-        });
+        response.statusCode = 200;
 
         response.end( arguments[0] );
 
