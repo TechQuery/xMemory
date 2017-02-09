@@ -20,10 +20,11 @@
 ## 【技术栈】
 
  - 编程语言：HTML 5、CSS 3、JavaScript(ES 5+)
- - UI 框架：EasyWebUI
+ - UI 框架：[EasyWebUI](//git.oschina.net/Tech_Query/EasyWebUI)
  - 前端基础库：Require.js、jQuery
- - SPA 引擎：EasyWebApp
+ - SPA 引擎：[EasyWebApp](//git.oschina.net/Tech_Query/EasyWebApp/tree/String_Template)
  - 后端引擎：Node.JS
+ - HTTP 服务器：[EasyREST.js](//git.oschina.net/Tech_Query/EasyREST.js)
 
 
 ## 【安装方法】
@@ -32,3 +33,13 @@
  2. 下载 [xMemory 最新公测版](https://github.com/TechQuery/xMemory/archive/master.zip)，并解压到一个新文件夹
  3. 在上述文件夹中执行 `npm install  &&  npm start` 命令
  4. 服务器启动后，即可在网页浏览器中用 `//localhost:8081/` 访问
+
+
+## 【使用方法】
+
+### 视频点播
+
+| 操作系统 | MP4 | RMVB | AVI | MKV |
+|:-------:|:---:|:----:|:---:|:---:|
+| MIUI    | √   | √    | √   | √   |
+| iOS     | √   |      |     |     |

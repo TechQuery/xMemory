@@ -10,11 +10,14 @@ define(['jquery'],  function ($) {
                 ),
                 function ($_Item, value) {
 
-                    if ( value )
-                        $_Item.html('')[0].style.backgroundImage =
-                            'url("' + value.url + '")';
+                    if ( value )  $_Item[0].innerHTML = '';
                 }
-            ).render(['']);
+            );
+
+        this[0].on('ready',  function () {
+
+            gallery.insert('');
+        });
 
         $_Input.change(function () {
 
@@ -40,7 +43,7 @@ define(['jquery'],  function ($) {
                     });
                 }).then(function () {
 
-                    gallery.insert({url: arguments[0]},  1);
+                    gallery.insert({path: arguments[0]},  1);
 
                     var data = new FormData();
 
